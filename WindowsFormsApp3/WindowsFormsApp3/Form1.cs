@@ -16,7 +16,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
-        string poll, dateofbirth, placeofbirth, name, education, marriage, badbeh;
+        string pol, dateofbirth, placeofbirth, name, education, marriage, badbeh;
 
         private void chlbxEdu_SelectedIndexChanged(object sender, EventArgs e)
         {
