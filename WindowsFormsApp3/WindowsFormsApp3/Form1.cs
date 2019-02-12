@@ -16,7 +16,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
-        string poll, dateofbirth1, placeofbirth, name666, education, marriage, badbeh;
+        string pol, dateofbirth, placeofbirth, name, education, marriage, badbeh;
 
         private void chlbxEdu_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -109,11 +109,11 @@ namespace WindowsFormsApp3
         private void btnPrint_Click(object sender, EventArgs e)
         {
             if (rbMale.Checked)
-                poll = "мужской";
+                pol = "мужской";
             if (rbFemale.Checked)
-                poll = "женский";
+                pol = "женский";
             dateofbirth = dtpDOB.Value.ToShortDateString();
-            name666 = txtbxFIO.Text;
+            name = txtbxFIO.Text;
             if (chlbxEdu.SelectedIndex != -1)
                 education = chlbxEdu.SelectedItem.ToString();
             if (chbxNoBad.Checked) badbeh = "Нету";
@@ -122,7 +122,7 @@ namespace WindowsFormsApp3
             rtxtbxInfo.SelectedText += "Анкета.\n\n";
             rtxtbxInfo.SelectionAlignment = HorizontalAlignment.Left;
             rtxtbxInfo.SelectionFont = new Font("Times New Roman", 18, FontStyle.Regular);
-            rtxtbxInfo.SelectedText += "ФИО: " + name666 + ".\n" + "Пол: " + pol + ".\n" + "Дата рождения: " + dateofbirth + ".\n" + "Место рождения: " + placeofbirth + ".\n" + "Состояние в браке: " + marriage + ".\n" + "Образование: " + education + ".\n" + "Вредные привычки: " + badbeh + ".\n";
+            rtxtbxInfo.SelectedText += "ФИО: " + name + ".\n" + "Пол: " + pol + ".\n" + "Дата рождения: " + dateofbirth + ".\n" + "Место рождения: " + placeofbirth + ".\n" + "Состояние в браке: " + marriage + ".\n" + "Образование: " + education + ".\n" + "Вредные привычки: " + badbeh + ".\n";
 
         }
     }
